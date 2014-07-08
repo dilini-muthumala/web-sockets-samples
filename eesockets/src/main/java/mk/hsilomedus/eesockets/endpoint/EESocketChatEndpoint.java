@@ -17,7 +17,7 @@ import javax.websocket.server.ServerEndpoint;
 
 
 @ServerEndpoint("/chat")
-public class EESocketChatEndpoint {
+public class  EESocketChatEndpoint {
   
   private static Set<Session> conns = java.util.Collections.synchronizedSet(new HashSet<Session>());
   private static Map<Session, String> nickNames = new ConcurrentHashMap<Session, String>();
